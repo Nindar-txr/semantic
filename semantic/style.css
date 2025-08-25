@@ -1,46 +1,38 @@
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  padding: 20px;
-} 
-
-.container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  padding: 0 60px 0 60px;
+  gap: 12px;
+  padding: 20px;
 }
 
 header,
 footer,
+main,
 aside,
-main {
+main>section {
   border: 1px solid #ccc;
-  padding: 12px;  
-  margin-bottom: 12px;
   border-radius: 6px;
+  padding: 12px;
 }
 
-.main-container {
+body>section {
   display: flex;
   gap: 12px;
 }
 
 main {
   flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 aside {
   flex: 2;
-}
-
-section {
-  border: 1px solid #ccc;
-  padding: 8px 12px;
-  margin-bottom: 12px;
-  border-radius: 6px;
 }
